@@ -18,10 +18,10 @@ dado ao elemento HTML deve definir o que o elemento é ou o que ele faz.
 ( function( window, document ){
   'use strict';
 
-  var $text = document.querySelector( '[data-js="input-button"]' );
-  var $start = document.querySelector( '[data-js="start-button"]' );
-  var $stop = document.querySelector( '[data-js="stop-button"]' );
-  var $reset = document.querySelector( '[data-js="reset-button"]' );
+  var $text = document.querySelector( '[data-js="text"]' );
+  var $start = document.querySelector( '[data-js="start"]' );
+  var $stop = document.querySelector( '[data-js="stop"]' );
+  var $reset = document.querySelector( '[data-js="reset"]' );
   var temporizador;
 
 $start.addEventListener( 'click', startTimer, false );
@@ -41,6 +41,5 @@ function resetTimer() {
     $text.value = 0
     stopTimer();
 }
-
 
 })( window, document );
